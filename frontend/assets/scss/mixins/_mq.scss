@@ -1,0 +1,25 @@
+$bp-xs: '(max-width : 480px)';
+$bp-xs-helpdesk: '(min-width : 480px) and (max-width : 767px)';
+$bp-xs-land: '(min-width : 480px) and (max-width : 767px) and (orientation: landscape)';
+$bp-sm: '(min-width : 767px) and (max-width : 992px)';
+$bp-sm-land: '(min-width : 767px) and (max-width : 992px) and (orientation: landscape)';
+$bp-md-land: '(min-width : 992px) and (max-width : 1200px) and (orientation: landscape)';
+$bp-md: '(min-width : 992px) and (max-width : 1200px)';
+$bp-lg: '(min-width : 1200px) and (max-width : 1440px)';
+$bp-xg: '(min-width : 1440px)';
+
+$bp-iphone6plusland: '(min-device-width: 414px) and (max-device-width: 736px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 3)';
+$bp-iphone6plusportrait: '(min-device-width: 414px) and (max-device-width: 736px)
+    and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3)';
+$bp-nexus7-portrait: 'only screen and (max-device-width:600px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)
+    and (device-aspect-ratio: 40/23)';
+
+$bp-ie11: 'screen and (-ms-high-contrast: active), (-ms-high-contrast: none)';
+
+@mixin bp($points...) {
+  @each $point in $points {
+    @media #{$point} {@content;}
+  }
+}

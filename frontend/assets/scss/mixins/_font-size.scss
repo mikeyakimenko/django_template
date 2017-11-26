@@ -1,0 +1,8 @@
+@function rem($n) {
+    @return $n / 16 + rem;
+}
+
+@mixin font-size($value) {
+    font-size: $value + px;
+    font-size: rem($value);
+}

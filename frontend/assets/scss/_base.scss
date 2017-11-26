@@ -1,0 +1,87 @@
+body {
+    @include font-size(20);
+    line-height: 150%;
+    background: #fff;
+    font-family: Georgia, serif;
+    position: relative;
+    color: #303030;
+    padding: 0;
+    margin: 0;
+    &.open-menu {
+        overflow: hidden;
+    } // &.open-menu
+    @include bp($bp-sm, $bp-sm-land, $bp-md) {
+        @include font-size(22);
+
+    } // md
+    @include bp($bp-lg, $bp-xg) {
+        @include font-size(22);
+    } // lg
+} // body
+
+img {
+    display: block;
+    max-width: 100%;
+    vertical-align: top;
+    &.portrait {
+        max-height: 86vh;
+    } // &.portrait
+} // img
+
+a {
+    color: #3498db;
+    @include transition(all, 0.3s, ease);
+    &:hover {
+        text-decoration: none;
+    } // &:hover
+} // a
+
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+    line-height: 1;
+} // h1, h2, h3, h4, h5
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+} // fieldset
+
+button {
+    border: none;
+    background: none;
+    user-select: none;
+}
+
+figure {
+    margin: 0;
+}
+
+div, input, textarea, select,button, h1, h2, h3, h4, h5, h6,
+a, a:focus, span {
+    outline: none;
+} // div, input, textarea, select,button, h1, h2, h3, h4, h5, h6, a, a:focus, span
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}

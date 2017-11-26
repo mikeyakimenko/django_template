@@ -1,0 +1,10 @@
+{
+  "name": "dj_tempalte",
+  "version": "1.0.0",
+  "description": "dj_tempalte",
+  "private": true,
+  "dependencies": {
+    "normalize-css": "normalize.css#^7.0.0",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}
