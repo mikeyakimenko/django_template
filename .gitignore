@@ -1,0 +1,28 @@
+# files and env
+.DS_Store
+venv
+env
+*.egg
+*.egg-info
+*.pyc
+__pycache__
+db.sqlite3
+local_settings.py
+
+# IDE's
+.idea
+.project
+.pydevproject
+.settings
+.sublime
+
+# components trash
+.sass-cache
+node_modules
+bower_components
+package-lock.json
+
+# project trash
+backend/media
+backend/static
+frontend/assets/css
